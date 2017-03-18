@@ -15,6 +15,8 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 
 /* chrome自作聪明的样式,文本框点击的时候会有个边框,我还想要怎么去掉呢.哈哈 */
 .text,.btn{outline: none;}
+/* 解决IE6下图片不兼容问题, 尽量不要用CSS hack方法.*/
+.sbie6_img img{float: left;position: relative;top: 10px;}
 
 /* TOP菜单条 */
 #top{width: 960px;height: 30px;margin:0 auto;}
@@ -51,8 +53,10 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 	background: url(../images/search.png) no-repeat;}
 .search .text{width: 230px;height: 31px;position: absolute;top: 0;left: 20px;background: none;border:none;
 	font-size: 13px;color:#666;}
+/* IE6下input内容不居中问题 */
+.search .text{line-height: 30px;}
 .search .btn{width: 42px;height: 31px;position: absolute;top: 0;right: 0;background: none;border:none;}
-/* chrome自作聪明的样式,文本框点击的时候会有个边框,我还想要怎么去掉呢.哈哈 */
+
 
 /* 导航 */
 #nav{width:960px;height: 36px;padding-top: 8px; margin:0 auto;}
@@ -60,6 +64,9 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 #nav a{float: left;height: 28px;color:#fff;font-size: 15px;font-family: Arial;line-height: 28px;}
 #nav strong{float: left;height: 28px;font-weight: normal;}
 #nav span{float: left;height: 28px;padding:0 16px;}
+
+/* IE6下a标签光标不会出现手的问题 */
+#nav a{cursor:pointer;}
 
 #nav a:hover,#nav .active a{background: url(../images/nav_active_bg.png) repeat-x 0 -56px;}
 #nav strong:hover,#nav .active strong{background: url(../images/nav_active_bg.png) no-repeat;}
