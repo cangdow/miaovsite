@@ -94,8 +94,7 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 /* 要在父级加一个清楚浮动的动作 */
 #main{width: 942px;margin:0 auto;padding-top: 30px;}
 #side{width: 210px;float: left;}
-#wrap{width: 706px;float: right;
-	border:1px solid red;}
+#wrap{width: 706px;float: right;}
 
 .module_menu{margin-bottom: 12px;}
 .module_menu h2{height: 29px;font-size: 15px;text-align: center;color:#fff;
@@ -117,7 +116,7 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 .module_menu .list a:hover{background: #fae191;
 	border-bottom: 1px solid #b20e00;color:#b20e00;}
 
-.module_jion{width: 210px;
+.module_jion{width: 210px;margin-bottom: 33px;
 	background: url(../images/list_bg.gif) repeat-y -630px;}
 .module_jion_top{
 	background: url(../images/list_bg.gif) no-repeat -420px 0;}
@@ -141,6 +140,29 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 .join_list .space2{height: 43px;padding-top: 5px;line-height: 18px;}
 .join_list .space3{height: 45px;padding-top: 5px;line-height: 18px;}
 
+#payment{width: 210px;text-align: center;}
+
+
+.sort
+.sort dl{float: left;}
+.sort dt{float: left;color:#747474;font-weight: bold;font-size: 12px;line-height: 19px;padding-right: 2px;}
+.sort dd{float: left; position: relative;width: 109px;height: 19px;margin-right: 12px;}
+.sort h2{width: 107px;height: 17px;border:1px solid #ccc;line-height: 17px;
+	font-size: 12px;color:#747474;font-weight: normal;text-indent: 5px;}
+	/* 绝对定位如果用right IE6下会有1px的偏差 */
+.sort a{width: 19px;height: 19px;position: absolute;top: 0;left: 90px;z-index: 2;
+	background:url(../images/shopping_bg.png) no-repeat 0 -376px;}
+.sort a:hover{
+	background:url(../images/shopping_bg.png) no-repeat -19px -376px;}
+.sort ul{width: 107px;border:1px solid #ccc;background: #fff;z-index: 1;display: none;
+	position: absolute;top: 18px;left: 0;}
+.sort li{font-size: 12px;line-height: 20px;text-indent: 5px;color:#747474;cursor:pointer;}
+.sort .active{background: #099;}
+
+.sort p{float: right;color:#747474;font-size: 12px;padding-top: 2px;}
+.sort p strong{color:#999;}
+.sort p span{padding:0 5px;}
+.sort .color_style{color:#b20e00;}
 
 
 
