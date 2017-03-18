@@ -13,6 +13,9 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 .clearfix{zoom:1;}
 .clearfix:after{content: '';display: block;clear: both;}
 
+/* chrome自作聪明的样式,文本框点击的时候会有个边框,我还想要怎么去掉呢.哈哈 */
+.text,.btn{outline: none;}
+
 /* TOP菜单条 */
 #top{width: 960px;height: 30px;margin:0 auto;}
 
@@ -50,7 +53,6 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 	font-size: 13px;color:#666;}
 .search .btn{width: 42px;height: 31px;position: absolute;top: 0;right: 0;background: none;border:none;}
 /* chrome自作聪明的样式,文本框点击的时候会有个边框,我还想要怎么去掉呢.哈哈 */
-.search .text,.search .btn{outline: none;}
 
 /* 导航 */
 #nav{width:960px;height: 36px;padding-top: 8px; margin:0 auto;}
@@ -90,11 +92,60 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 	opacity: 0.8;filter: alpha(opacity:80);z-index: 2;}
 
 /* 要在父级加一个清楚浮动的动作 */
-#main{width: 942px;margin:0 auto;}
-#side{width: 210px;float: left;
-	border:1px solid red;}
+#main{width: 942px;margin:0 auto;padding-top: 30px;}
+#side{width: 210px;float: left;}
 #wrap{width: 706px;float: right;
 	border:1px solid red;}
+
+.module_menu{margin-bottom: 12px;}
+.module_menu h2{height: 29px;font-size: 15px;text-align: center;color:#fff;
+	line-height: 29px;margin-bottom: 1px;
+	background: url(../images/module_menu_bg.png) repeat-x 0 -58px;}
+.module_menu strong{height: 29px;display: block;
+	background: url(../images/module_menu_bg.png) no-repeat;}
+.module_menu span{height: 29px;display: block;
+	background: url(../images/module_menu_bg.png) no-repeat right -29px;}
+
+.module_menu .list{
+	background: url(../images/list_bg.gif) repeat-y;}
+.module_menu .list ul{padding: 18px 8px 15px;
+	background: url(../images/list_bg.gif) no-repeat -210px bottom;}
+.module_menu .list li{}
+.module_menu .list a{display: block;height: 27px;line-height: 27px;color:#434343;
+	border-bottom: 1px solid #fff;text-decoration: none;
+	font-size: 12px;font-weight: bold;padding-left: 32px;}
+.module_menu .list a:hover{background: #fae191;
+	border-bottom: 1px solid #b20e00;color:#b20e00;}
+
+.module_jion{width: 210px;
+	background: url(../images/list_bg.gif) repeat-y -630px;}
+.module_jion_top{
+	background: url(../images/list_bg.gif) no-repeat -420px 0;}
+.module_jion_bottom{
+	background: url(../images/list_bg.gif) no-repeat -840px bottom;}
+
+.jion_form{width: 180px;margin:0 auto 12px;}
+.jion_form p{color:#666;font-size: 15px;line-height: 18px;
+	padding:12px 0;}
+.jion_form .text{width: 175px;height: 25px;line-height: 25px;background: #fff;
+	font-size: 18px;color:gray;margin-bottom: 6px;
+	border: 1px solid #fffff2;border-top: 1px solid #9c9c9c;border-left: 1px solid #9c9c9c;}
+.jion_form .btn{border:none;width: 88px;height: 25px;color:#fff;font-weight: bold;
+	display: block;margin:0 auto;
+	background:url(../images/shopping_bg.png) no-repeat 0 -145px;}
+
+.join_list{width: 192px;margin:0 auto; padding:0 8px;
+	background:url(../images/shopping_bg.png) no-repeat 20px -170px;}
+.join_list li{border-top:1px solid #fff;padding-left: 62px;font-size: 13px;color:#434343;}
+.join_list .space1{height: 45px;line-height: 45px;}
+.join_list .space2{height: 43px;padding-top: 5px;line-height: 18px;}
+.join_list .space3{height: 45px;padding-top: 5px;line-height: 18px;}
+
+
+
+
+
+
 
 
 
